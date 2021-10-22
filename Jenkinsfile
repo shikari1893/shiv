@@ -22,7 +22,7 @@ node('shiv') {
             '''
                 }
          } catch(Exception exp) {
-        build_ok = false
+        build_status = false
         println exp.getMessage()
         println exp.getCause()
         echo "Error detected, but we will continue."        
@@ -31,7 +31,7 @@ node('shiv') {
         
         stage('three') {
         echo "Third stage is running ...."
-        echo "currentBuild.result"
+        echo "${currentBuild.result}"
     } 
         
         
