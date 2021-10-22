@@ -3,7 +3,7 @@
 node('shiv') {
         stage('one') {
               //checkout scm
-             // def build_ok = true
+             def build_ok = true
               sh '''
               pwd
               pwd=$?
@@ -34,10 +34,10 @@ node('shiv') {
     } 
         
         
- /*       if(build_ok) {
+        if(build_ok) {
         currentBuild.result = "SUCCESS"
     } else {
         currentBuild.result = "FAILURE"
-    } */
+    } 
         
       }
