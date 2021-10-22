@@ -6,9 +6,10 @@ node('shiv') {
               //checkout scm
              
               sh '''
-              pwd
-              pwd=$?
-              if [[ ${pwd} = 0 ]] ; then exit 0 ; fi
+                cat shiv.txt
+             # pwd
+             # pwd=$?
+            #  if [[ ${pwd} = 0 ]] ; then exit 0 ; fi
               
               '''
         }
