@@ -30,16 +30,16 @@ node('shiv') {
         
         stage('three') {
         sh '''
-        echo "Third stage is still running"
+        println "Third stage is still running"
        
         '''
     } 
         
         
-        if(build_ok) {
+ /*       if(build_ok) {
         currentBuild.result = "SUCCESS"
     } else {
         currentBuild.result = "FAILURE"
-    }
+    } */
         
       }
