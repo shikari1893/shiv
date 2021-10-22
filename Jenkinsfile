@@ -19,8 +19,10 @@ node('shiv') {
             '''
                 }
          } catch(e) {
-        build_ok = false
-        echo e.toString()  
+        //build_ok = false
+        echo err.getMessage()
+        echo "Error detected, but we will continue."        
+        //echo e.toString()  
     }
         
         stage('three') {
