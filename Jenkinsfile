@@ -1,7 +1,7 @@
 #!groovy
 
 node('shiv') {
-        def build_ok = true
+        def build_status = true
         stage('one') {
               //checkout scm
              
@@ -31,10 +31,11 @@ node('shiv') {
         
         stage('three') {
         echo "Third stage is running ...."
+        echo "currentBuild.result"
     } 
         
         
-        if(build_ok) {
+        if(build_status) {
         currentBuild.result = "SUCCESS"
     } else {
         currentBuild.result = "FAILURE"
