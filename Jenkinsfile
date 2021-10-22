@@ -5,7 +5,7 @@ node('shiv') {
               sh '''
               pwd
               pwd=$?
-              if [[ ${pwd} = 0 ]] ; then exit 1 ; fi
+              if [[ ${pwd} = 0 ]] ; then exit 0 ; fi
               
               '''
         }
