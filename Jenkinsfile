@@ -6,10 +6,10 @@ node('shiv') {
               //checkout scm
              
               sh '''
-                cat shiv.txt
-             # pwd
-             # pwd=$?
-            #  if [[ ${pwd} = 0 ]] ; then exit 0 ; fi
+               
+              pwd
+             pwd=$?
+             if [[ ${pwd} = 0 ]] ; then exit 0 ; fi
               
               '''
         }
@@ -17,9 +17,10 @@ node('shiv') {
         try{
         stage('two') {
             sh '''
-            pwd
-              pwd=$?
-              if [[ ${pwd} = 0 ]] ; then exit 1 ; fi
+             cat shiv.txt
+            #pwd
+            #  pwd=$?
+             # if [[ ${pwd} = 0 ]] ; then exit 1 ; fi
             '''
                 }
          } catch(Exception exp) {
