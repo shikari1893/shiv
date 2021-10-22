@@ -4,7 +4,8 @@ node('shiv') {
               def build_ok = true
               sh '''
               pwd
-              sh 'exit 0'
+              if [[ ${build_ok} = true ]] ; then exit 1 ; fi
+              
               '''
         }
         
