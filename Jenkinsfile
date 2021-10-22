@@ -3,7 +3,7 @@
 node('shiv') {
         stage('one') {
               //checkout scm
-              def build_ok = true
+             // def build_ok = true
               sh '''
               pwd
               pwd=$?
@@ -29,10 +29,10 @@ node('shiv') {
     }
         
         stage('three') {
-        sh '''
-        println "Third stage is still running"
+        sh '
+        echo "Third stage is still running"
        
-        '''
+        '
     } 
         
         
