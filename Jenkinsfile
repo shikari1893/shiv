@@ -29,10 +29,7 @@ node('shiv') {
     }
         
         stage('three') {
-        sh '
-        echo "Third stage is still running"
-       
-        '
+        sh "Third stage is running ...."
     } 
         
         
