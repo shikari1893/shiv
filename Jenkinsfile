@@ -31,7 +31,7 @@ node('shiv') {
         
         stage('three') {
         echo "Third stage is running ...."
-        echo "${currentBuild.result}"
+        echo "${currentBuild.currentResult}"
     } 
         
         
