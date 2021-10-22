@@ -20,9 +20,10 @@ node('shiv') {
               if [[ ${pwd} = 0 ]] ; then exit 1 ; fi
             '''
                 }
-         } catch(e) {
+         } catch(Exception exp) {
         //build_ok = false
-        echo err.getMessage()
+        println exp.getMessage()
+        println exp.getCause()
         echo "Error detected, but we will continue."        
         //echo e.toString()  
     }
@@ -30,7 +31,7 @@ node('shiv') {
         stage('three') {
         sh '''
         echo "Third stage is still running"
-        touch shakti.txt
+       
         '''
     } 
         
