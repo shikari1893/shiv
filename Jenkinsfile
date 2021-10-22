@@ -4,7 +4,10 @@ node('shiv') {
               
               sh '''
               pwd
+              sh 'exit 0'
               '''
-
         }
+        
+        
+        
       }
