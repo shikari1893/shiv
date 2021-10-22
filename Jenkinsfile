@@ -1,9 +1,10 @@
 #!groovy
 
 node('shiv') {
+        def build_ok = true
         stage('one') {
               //checkout scm
-             def build_ok = true
+             
               sh '''
               pwd
               pwd=$?
@@ -24,7 +25,6 @@ node('shiv') {
         //build_ok = false
         println exp.getMessage()
         println exp.getCause()
-        exp.printStackTrace()
         echo "Error detected, but we will continue."        
         //echo e.toString()  
     }
