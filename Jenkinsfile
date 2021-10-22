@@ -24,7 +24,10 @@ node('shiv') {
     }
         
         stage('three') {
-        sh 'time'
+        sh '''
+        echo "Third stage is still running"
+        touch shakti.txt
+        '''
     } 
         
         
