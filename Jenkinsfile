@@ -1,3 +1,5 @@
+#!groovy
+
 node('shiv') {
         stage('one') {
               //checkout scm
