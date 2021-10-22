@@ -22,7 +22,7 @@ node('shiv') {
             '''
                 }
          } catch(Exception exp) {
-        //build_ok = false
+        build_ok = false
         println exp.getMessage()
         println exp.getCause()
         echo "Error detected, but we will continue."        
