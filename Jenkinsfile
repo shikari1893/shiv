@@ -3,7 +3,7 @@
 node('shiv') {
         def build_status = true
         stage('one') {
-              //checkout scm
+              checkout scm
              
               sh '''
                /test.sh
