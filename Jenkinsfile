@@ -13,7 +13,7 @@ node('shiv') {
               chmod -R 755 test.sh
               ./test.sh
               #status= $?
-              if [ $? e 0 ] ; then
+              if [ $? eq 0 ] ; then
                 echo " Fyre Node Was successfully Provisioned "
              
               else
