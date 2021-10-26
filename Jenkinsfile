@@ -17,7 +17,7 @@ node('shiv') {
         try{
         stage('two') {
             sh '''
-             cat shiv.txt
+            test.sh
             #pwd
             #  pwd=$?
              # if [[ ${pwd} = 0 ]] ; then exit 1 ; fi
