@@ -10,10 +10,19 @@ node('shiv') {
               checkout scm
              
               sh '''
-              chmod -R 755 test.sh
-              ./test.sh
-              status= $?
-              if [[ ${status} = 1 ]] ; then exit 1 ; fi || echo " Fyre Node Was successfully Provisioned "
+                        chmod -R 755 test.sh
+                        ./test.sh
+              
+              
+                         status=$?
+                        if [ $status -eq 0 ]; then
+                        echo "Fyre Node Was successfully Provisioned"
+                         elif [ $status -eq 2 ]; then
+                         echo "Fyre Node Was Not successfully Provisioned"
+                        fi
+               
+               
+              #if [[ ${status} = 1 ]] ; then exit 1 ; fi || echo " Fyre Node Was successfully Provisioned "
               #if [[ ${status} = 0 ]] ; then
               #  echo " Fyre Node Was successfully Provisioned "
              
@@ -27,6 +36,7 @@ node('shiv') {
              #if [[ ${pwd} = 0 ]] ; then exit 0 ; fi
               
               '''
+                
         }
         
         try{
