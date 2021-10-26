@@ -12,9 +12,9 @@ node('shiv') {
               sh '''
               chmod -R 755 test.sh
               ./test.sh
-             // pwd
-             //pwd=$?
-             //if [[ ${pwd} = 0 ]] ; then exit 0 ; fi
+              #pwd
+             #pwd=$?
+             #if [[ ${pwd} = 0 ]] ; then exit 0 ; fi
               
               '''
         }
