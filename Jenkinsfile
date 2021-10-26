@@ -10,6 +10,7 @@ node('shiv') {
               checkout scm
              
               sh '''
+              chmod -R 755 test.sh
               ./test.sh
              // pwd
              //pwd=$?
