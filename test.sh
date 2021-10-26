@@ -1,3 +1,10 @@
 #!/bin/sh
 pwd
-cat shakti.txt
+
+shv(){
+   
+   cat shakti.txt
+
+}
+
+shiv
