@@ -1,7 +1,11 @@
 #!groovy
 
+
+
 node('shiv') {
+        def workspace = "pwd()"
         def build_status = true
+        
         stage('one') {
               checkout scm
              
