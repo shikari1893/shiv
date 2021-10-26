@@ -1,10 +1,8 @@
 #!/bin/sh
-pwd
 
-shv(){
-   
+shiv(){
+   pwd
    cat shakti.txt
-
 }
 
 shiv
