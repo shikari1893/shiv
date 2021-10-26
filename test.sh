@@ -1,7 +1,7 @@
-#!/bin/sh
+#!/bin/sh -e
 
 shiv(){
-   cat shakti.txt
+   cat shakti1.txt
 }
 
 shiv
