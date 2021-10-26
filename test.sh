@@ -2,11 +2,11 @@
 set -e
 
 shiv(){
-   cat shakti1.txt
+   cat shakti.txt
 }
 
 shiv
 
-echo "Script is still running"
+#echo "Script is still running"
  
 
