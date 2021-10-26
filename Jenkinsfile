@@ -10,7 +10,7 @@ node('shiv') {
               checkout scm
              
               sh '''
-              test.sh
+              ./test.sh
              // pwd
              //pwd=$?
              //if [[ ${pwd} = 0 ]] ; then exit 0 ; fi
