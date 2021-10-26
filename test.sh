@@ -5,5 +5,7 @@ shiv(){
 }
 
 shiv
+
+echo "Script is still running"
  
 
