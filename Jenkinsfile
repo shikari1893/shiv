@@ -11,7 +11,7 @@ node('shiv') {
               checkout scm
              
               sh "
-                        chmod -R 755 test.sh
+                        #chmod -R 755 test.sh
                         ./test.sh
                 "
               
