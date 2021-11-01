@@ -5,21 +5,23 @@
 node('shiv') {
         def workspace = "pwd()"
         def build_status = true
+        def fyrelog=${fyrePath}/fyrerequest.log
         
         stage('one') {
               checkout scm
              
-              sh '''
+              sh "
                         chmod -R 755 test.sh
                         ./test.sh
+                "
               
               
-                         status=$?
-                        if [ $status -eq 0 ]; then
-                        echo "Fyre Node Was successfully Provisioned"
-                         elif [ $status -eq 2 ]; then
-                         echo "Fyre Node Was Not successfully Provisioned"
-                        fi
+                        /* status=$?
+                        #if [ $status -eq 0 ]; then
+                       # echo "Fyre Node Was successfully Provisioned"
+                        # elif [ $status -eq 2 ]; then
+                         #echo "Fyre Node Was Not successfully Provisioned"
+                       # fi
                
                
               #if [[ ${status} = 1 ]] ; then exit 1 ; fi || echo " Fyre Node Was successfully Provisioned "
@@ -33,9 +35,9 @@ node('shiv') {
               
               #pwd
              #pwd=$?
-             #if [[ ${pwd} = 0 ]] ; then exit 0 ; fi
+             #if [[ ${pwd} = 0 ]] ; then exit 0 ; fi */
               
-              '''
+              
                 
         }
         
@@ -56,10 +58,7 @@ node('shiv') {
         //echo e.toString()  
     }
         
-        stage('three') {
-        echo "Third stage is running ...."
-        echo "${currentBuild.currentResult}"
-    } 
+
         
         
         if(build_status) {
