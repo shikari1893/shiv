@@ -10,7 +10,7 @@ node('shiv') {
         stage('one') {
               checkout scm
              
-              sh ' ./test.sh -f 'John Smith' -a 25 -u john '
+                sh ' ./test.sh -f ${fyrelog} '
                         
                 
                 //chmod -R 755 test.sh
