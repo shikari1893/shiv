@@ -10,8 +10,10 @@ node('shiv') {
         def nodeNumber= 1
         
         stage('one') {
-              checkout scm
+               checkout scm
                sh("./test.sh --var='${nodeNumber}'")
+                
+        }
              
                 //sh ' ./test.sh -f ${fyrelog} '
                         
@@ -44,7 +46,7 @@ node('shiv') {
               
               
                 
-        }
+        
         
         try{
         stage('two') {
