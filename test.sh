@@ -3,6 +3,7 @@ set -e
 
 shiv(){
    cat shakti.txt
+   echo $fyrelog
 }
 
 shiv
