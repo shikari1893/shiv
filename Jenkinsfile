@@ -10,10 +10,12 @@ node('shiv') {
         stage('one') {
               checkout scm
              
-              sh "
-                        #chmod -R 755 test.sh
-                        ./test.sh
-                "
+              sh ' ./test.sh '
+                        
+                
+                //chmod -R 755 test.sh
+                        
+      
               
               
                         /* status=$?
