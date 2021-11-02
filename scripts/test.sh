@@ -18,11 +18,14 @@
 
 nodeNumber=1
 
-$s="shiv.sh ${nodeNumber}" 
+$s="test.sh"${nodeNumber} 
+
+echo $s
+
 #v="${nodeNumber}"
 #o=$s $v
 #echo $o
-eval $s
+#eval $s
 
 
 #cmd="pwd ${nodeNumber}"
