@@ -12,7 +12,7 @@ shiv(){
    
    }
    
-if [ $1 -gt 0 ] 
+if [ $1 -gt 2 ] 
 then
 	echo "first argument is larger"
 else
