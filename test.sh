@@ -1,8 +1,11 @@
-/bin/sh
+#!/bin/sh
 
 #echo "My name is ${nodeNumber} "
 
+
 pwd
+
+
 
 #echo "The value of the first argument to the script : $1"
 
