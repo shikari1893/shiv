@@ -2,20 +2,22 @@
 
 #echo "My name is ${nodeNumber} "
 
-shiv(){
-   cat shakti.txt
+echo "The value of the first argument to the script : $1"
+
+#shiv(){
+#   cat shakti.txt
    
-}
+#}
 
-nodeNumber=${1}
-if [[ ${nodeNumber} = 1 ]]
-then
-  echo "script is fine"
-else
-  echo "script is not fine"
-fi
+#nodeNumber=${1}
+#if [[ ${nodeNumber} = 1 ]]
+#then
+#  echo "script is fine"
+#else
+#  echo "script is not fine"
+#fi
 
-shiv
+#shiv
 
 #echo "Script is still running"
  
