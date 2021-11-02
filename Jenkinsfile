@@ -17,14 +17,7 @@ node('shiv') {
                   
                   chmod +x scripts/test.sh
                   
-                  scripts/test.sh '''${nodeNumber}'''
-                  #echo $s
-             
-                  #eval $s
-                  
-                  
-                 '''
-                 
+                  scripts/test.sh '''nodeNumber
                  
         }
                
