@@ -16,7 +16,7 @@
 
 #EVAL SCRIPT
 
-nodeNumber=1
+#nodeNumber=1
 
 $s="test.sh "${nodeNumber} 
 eval $s
