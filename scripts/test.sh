@@ -1,6 +1,10 @@
 #!/bin/bash
 
-nodeNumber = 1
+setLocalVariables()
+{
+ nodeNumber = 1
+}
+
 echo "NM is $nodeNumber"
 
 shiv(){
