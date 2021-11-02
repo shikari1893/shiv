@@ -15,7 +15,8 @@ node('shiv') {
                 sh '''
                   chmod +x scripts/test.sh
                   $s="scripts/test.sh 1"
-                  eval $s
+                  echo $s
+                  #eval $s
                   
                   
                   '''
