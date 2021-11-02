@@ -18,8 +18,10 @@ node('shiv') {
                   
                   chmod +x scripts/test.sh
                   
-                  scripts/test.sh '''nodeNumber
-                 
+                  s= scripts/test.sh '''nodeNumber
+                 '''
+                 echo $s
+                 '''
         }
                
         //scripts/test.sh ${FYRE_ID} ${FYRE_TOKEN} ${BUILD_DISPLAY_NAME} ${resourceType} ${nodeNumber}           
