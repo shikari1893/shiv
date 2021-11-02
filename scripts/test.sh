@@ -1,9 +1,5 @@
 #!/bin/bash
 
-setLocalVariables()
-{
- nodeNumber = 1
-}
 
 echo "NM is ${nodeNumber}"
 
