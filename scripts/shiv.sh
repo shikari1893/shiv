@@ -1,6 +1,8 @@
 #!/bin/sh
 
-
+	       FYRE_ID = $1
+  	       FYRE_TOKEN = $2
+	       
               fyrelog=${fyrePath}/fyrerequest.log
               nodeNumber=1
               resourceType=VM
