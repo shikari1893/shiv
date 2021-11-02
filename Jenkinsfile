@@ -12,7 +12,6 @@ node('shiv') {
         stage('one') {
                 checkout scm
                 sh '''
-                  nodeNumber = 1
                   chmod -R 755 scripts
                   scripts/test.sh ${nodeNumber}
                   '''
