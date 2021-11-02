@@ -18,7 +18,7 @@
 
 nodeNumber=1
 
-$s="scripts/shiv.sh ${nodeNumber}"
+$s="shiv.sh ${nodeNumber}" 
 #v="${nodeNumber}"
 #o=$s $v
 #echo $o
