@@ -11,7 +11,8 @@ node('shiv') {
         
         stage('one') {
                checkout scm
-               sh("./test.sh --var='${nodeNumber}'")
+                sh ''' ./test.sh ${nodeNumber} '''
+               //sh("./test.sh --var='${nodeNumber}'")
                 
         }
              
