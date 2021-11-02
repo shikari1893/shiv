@@ -14,7 +14,7 @@ node('shiv') {
                 sh ''' 
                   nodeNumber= 1
                   chmod -R 755 test.sh
-                 ./test.sh ${nodeNumber} 
+                 ./test.sh
                  
                  '''
         }
