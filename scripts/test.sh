@@ -1,17 +1,17 @@
 #!/bin/sh
 
 
-setLocalVariables()
-{
-  nodeNumber=`1`
-  resourceType=`VM`
-  export nodeNumber resourceType
-}
+#setLocalVariables()
+#{
+#  nodeNumber=`1`
+#  resourceType=`VM`
+#  export nodeNumber resourceType
+#}
 
-echo $resourceType
+#echo $resourceType
 
-set nodeNumber = $4
-set resourceType = $5
+#set nodeNumber = $4
+#set resourceType = $5
 echo "The script name : $0"
 echo "The value of the first argument to the script : $1"
 echo "The value of the first argument to the script : $2"
@@ -29,5 +29,5 @@ shiv(){
    
 
 
-setLocalVariables
+#setLocalVariables
 shiv
