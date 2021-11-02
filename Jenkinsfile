@@ -13,7 +13,7 @@ node('shiv') {
                 checkout scm
                 sh '''
                   nodeNumber= 1
-                  echo "Who I'm $SHELL
+                  echo "Who I'm $SHELL"
                   chmod -R 755 scripts
                   scripts/test.sh
                   
