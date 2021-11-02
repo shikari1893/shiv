@@ -10,9 +10,9 @@ shiv(){
 nodeNumber=${1}
 if [[ ${nodeNumber} = 1 ]]
 then
-  NodeLbl=host-1
+  echo "script is fine"
 else
-  NodeLbl=host
+  echo "script is not fine"
 fi
 
 shiv
