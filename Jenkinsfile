@@ -7,7 +7,7 @@
 node('shiv') {
         
         withCredentials([ 
-           usernamePassword(credentialsId: 'api-token',usernameVariable: 'FYRE_ID',passwordVariable: 'FYRE_TOKEN')
+           usernamePassword(credentialsId: '53c754d7-9683-4da2-8a8f-fd41b108cf78',usernameVariable: 'FYRE_ID',passwordVariable: 'FYRE_TOKEN')
           
     ]){
         def workspace = "pwd()"
