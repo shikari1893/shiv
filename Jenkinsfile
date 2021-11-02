@@ -11,12 +11,15 @@ node('shiv') {
         
         stage('one') {
                 checkout scm
-                sh ''' 
+                sh '''
                   nodeNumber= 1
+                  echo "Who I'm $SHELL
                   chmod -R 755 scripts
                   scripts/test.sh
+                  
+                  '''
                  
-                 '''
+                 
         }
                //sh("./test.sh --var='${nodeNumber}'")
                 
