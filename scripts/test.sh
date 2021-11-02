@@ -21,7 +21,8 @@ nodeNumber=1
 s="scripts/test.sh"
 v="${nodeNumber}"
 o=$s $v
-echo $o
+#echo $o
+eval $o
 
 
 #cmd="pwd ${nodeNumber}"
