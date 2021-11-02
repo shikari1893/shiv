@@ -3,12 +3,12 @@
 
 setLocalVariables()
 {
-  nodeNumber=1
-  resourceType='VM'
+  nodeNumber=`1`
+  resourceType=`VM`
   export nodeNumber resourceType
 }
 
-echo "NM is $nodeNumber "
+echo $resourceType
 
 set nodeNumber = $4
 set resourceType = $5
