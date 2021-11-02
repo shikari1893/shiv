@@ -21,7 +21,7 @@ node('shiv') {
         
         stage('one') {
                 checkout scm
-                chmod +x scripts/shiv.sh
+                //chmod +x scripts/shiv.sh
                 sh '''scripts/shiv.sh ${FYRE_ID} ${FYRE_TOKEN}'''
                 
         }
