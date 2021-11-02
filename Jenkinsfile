@@ -22,7 +22,10 @@ node('shiv') {
         stage('one') {
                 checkout scm
                 //chmod +x scripts/shiv.sh
-                sh '''scripts/shiv.sh ${FYRE_ID} ${FYRE_TOKEN}'''.execute().text
+                sh '''
+                chmod +x -R ${env.WORKSPACE}
+                scripts/shiv.sh ${FYRE_ID} ${FYRE_TOKEN}
+                '''
                 
         }
   
