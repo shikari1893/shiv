@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 	      
               fyrelog=${fyrePath}/fyrerequest.log
