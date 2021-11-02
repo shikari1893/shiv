@@ -18,7 +18,7 @@
 
 nodeNumber=1
 
-$s="test.sh"${nodeNumber} 
+$s="test.sh "${nodeNumber} 
 
 echo $s
 
