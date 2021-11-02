@@ -1,6 +1,5 @@
 #!groovy
-import jenkins.model.*
-jenkins = Jenkins.instance
+
 
 
 
@@ -11,19 +10,17 @@ node('shiv') {
         //def fyrelog=${fyrePath}/fyrerequest.log
         //currentBuild.displayName = shiv
         def nodeNumber = 1
-        nodeNumber = null
+        //nodeNumber = null
         
         
         stage('one') {
                 checkout scm
-                
-                println "NM is ${nodeNumber}"
                 env
                 sh '''
   
-                  chmod +x scripts/test.sh
+                  chmod +x scripts/shiv.sh
                   
-                  scripts/test.sh ${nodeNumber}
+                  scripts/shiv.sh
                 
                  
                  '''
