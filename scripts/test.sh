@@ -44,8 +44,7 @@ echo "The value of the first argument to the script : $2"
 echo "The value of the first argument to the script : $3"
 echo "The value of the first argument to the script : $4
 echo "The value of the first argument to the script : $5"
-echo "$# arguments"
-echo "$* list of arguments"
+
 
 
 #shiv(){
