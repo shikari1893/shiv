@@ -17,7 +17,7 @@
 #EVAL SCRIPT
 
 nodeNumber=1
-cmd = "pwd ${nodeNumber}"
+cmd="pwd ${nodeNumber}"
 echo "$cmd"
 eval $cmd
 
