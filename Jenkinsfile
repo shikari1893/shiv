@@ -22,7 +22,7 @@ node('shiv') {
                    
         
         
-        try{
+     /*   try{
         stage('two') {
             sh '''
             
@@ -46,6 +46,6 @@ node('shiv') {
         currentBuild.result = "SUCCESS"
     } else {
         currentBuild.result = "FAILURE"
-    } 
+    } */
         
       }
