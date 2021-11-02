@@ -22,7 +22,7 @@ node('shiv') {
         stage('one') {
                 checkout scm
                 env
-                echo "$FYRE_ID"
+                echo "username is ${FYRE_ID}"
                 sh '''
   
                   chmod +x scripts/shiv.sh 
