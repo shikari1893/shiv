@@ -13,8 +13,16 @@
 #set nodeNumber = $4
 #set resourceType = $5
 
+
+#EVAL SCRIPT
+
+nodeNumber=1
 cmd = "pwd ${nodeNumber}"
 echo "$cmd"
+eval $cmd
+
+
+
 #resourceType=VM
 #nodeNumber= 1
 
