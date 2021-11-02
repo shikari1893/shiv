@@ -2,7 +2,7 @@
 
 
 #setLocalVariables()
-#{
+# {
 #  nodeNumber=`1`
 #  resourceType=`VM`
 #  export nodeNumber resourceType
