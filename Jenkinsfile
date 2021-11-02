@@ -11,7 +11,7 @@ node('shiv') {
         
         stage('one') {
                 checkout scm
-        
+                def nodeNumber = 1
                 env
                 sh """
                   chmod +x scripts/test.sh
