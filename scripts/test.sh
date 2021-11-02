@@ -5,7 +5,7 @@ setLocalVariables()
  nodeNumber = 1
 }
 
-echo "NM is $nodeNumber"
+echo "NM is ${nodeNumber}"
 
 shiv(){
    cat shakti.txt
