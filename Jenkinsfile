@@ -11,14 +11,16 @@ node('shiv') {
         //def fyrelog=${fyrePath}/fyrerequest.log
         //currentBuild.displayName = shiv
         def nodeNumber = 1
+        nodeNumber = null
         
         
         stage('one') {
                 checkout scm
+                
                 println "NM is ${nodeNumber}"
                 env
                 sh '''
-                  echo "${nodeNumber}"
+  
                   chmod +x scripts/test.sh
                   
                   scripts/test.sh ${nodeNumber}
