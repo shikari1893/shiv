@@ -14,7 +14,8 @@ node('shiv') {
                 env
                 sh '''
                   chmod +x scripts/test.sh
-                  scripts/test.sh ${nodeNumber}
+                  $s=scripts/test.sh 1
+                  eval $s
                   
                   
                   '''
