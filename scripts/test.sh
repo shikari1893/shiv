@@ -11,6 +11,13 @@ shiv(){
    cat shakti.txt
    
    }
+   
+if [ $1 -gt 0 ] 
+then
+	echo "first argument is larger"
+else
+	echo "first argument is smaller"
+fi
 
-nodeNumber=${1}
+
 shiv
