@@ -21,17 +21,18 @@ node('shiv') {
         
         stage('one') {
                 checkout scm
-                env
-                echo "username is ${FYRE_ID}"
-                sh '''
+                chmod +x scripts/shiv.sh
+                sh '''scripts/shiv.sh ${FYRE_ID} ${FYRE_TOKEN}'''
+                
+        }
   
-                  chmod +x scripts/shiv.sh 
+                   
                   
-                  scripts/shiv.sh ${FYRE_ID} ${FYRE_TOKEN}
+                  
                 
                  
-                 '''
-        }
+                 
+        
                
         //scripts/test.sh ${FYRE_ID} ${FYRE_TOKEN} ${BUILD_DISPLAY_NAME} ${resourceType} ${nodeNumber}           
         
