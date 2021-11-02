@@ -10,5 +10,5 @@ if [ "$1" != "" ]; then
 else
     echo "Positional parameter 1 is empty"
 fi
-
+nodeNumber=${1}
 shiv
