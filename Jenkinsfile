@@ -14,7 +14,7 @@ node('shiv') {
                 echo "node number is ${nodeNumber}"
                 env
                 sh '''
-                  nodeNumber = 1
+                  #nodeNumber = 1
                   chmod +x scripts/test.sh
                   scripts/test.sh ${nodeNumber}
                   '''
