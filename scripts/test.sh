@@ -13,8 +13,8 @@
 #set nodeNumber = $4
 #set resourceType = $5
 
-cmd = "echo resourceType{VM},nodeNumber{1}"
-$cmd
+cmd = "pwd ${nodeNumber}"
+echo "$cmd"
 #resourceType=VM
 #nodeNumber= 1
 
