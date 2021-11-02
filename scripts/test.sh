@@ -1,6 +1,8 @@
 #!/bin/bash
 
 nodeNumber = 1
+ech "NM is $nodeNumber"
+
 shiv(){
    cat shakti.txt
    
