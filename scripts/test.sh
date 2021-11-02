@@ -1,5 +1,6 @@
 #!/bin/bash
 
+nodeNumber = 1
 shiv(){
    cat shakti.txt
    
