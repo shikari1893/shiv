@@ -13,8 +13,8 @@ node('shiv') {
                 checkout scm
                 sh ''' 
                   nodeNumber= 1
-                  chmod +x test.sh
-                 ./test.sh
+                  chmod -R 755 scripts
+                  scripts/test.sh
                  
                  '''
         }
