@@ -1,3 +1,8 @@
 #!/bin/sh
 
-date
+shiv(){
+   cat shakti.txt
+   
+   }
+
+shiv
