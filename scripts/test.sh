@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 
 echo "The script name : $0"
