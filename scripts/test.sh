@@ -18,8 +18,8 @@
 
 #nodeNumber=1
 
-$s="test.sh "${nodeNumber} 
-eval $s
+#$s="test.sh "${nodeNumber} 
+#eval $s
 #echo $s
 
 #v="${nodeNumber}"
