@@ -25,9 +25,9 @@ node('shiv') {
                 echo "$FYRE_ID"
                 sh '''
   
-                  chmod +x scripts/shiv.sh ${FYRE_ID} ${FYRE_TOKEN}
+                  chmod +x scripts/shiv.sh 
                   
-                  scripts/shiv.sh
+                  scripts/shiv.sh ${FYRE_ID} ${FYRE_TOKEN}
                 
                  
                  '''
