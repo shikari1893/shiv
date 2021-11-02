@@ -15,13 +15,14 @@ node('shiv') {
                 env
                 sh '''
                   chmod +x scripts/test.sh
-                  scripts/test.sh ${FYRE_ID} ${FYRE_TOKEN} ${BUILD_DISPLAY_NAME} ${resourceType} ${nodeNumber}
+                  scripts/test.sh shiv
+                  
                   '''
                  
                  
         }
                
-                   
+        //scripts/test.sh ${FYRE_ID} ${FYRE_TOKEN} ${BUILD_DISPLAY_NAME} ${resourceType} ${nodeNumber}           
         
         
      /*   try{
