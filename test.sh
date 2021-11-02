@@ -2,7 +2,9 @@
 
 #echo "My name is ${nodeNumber} "
 
-echo "The value of the first argument to the script : $1"
+echo "Hi my name is shiv"
+
+#echo "The value of the first argument to the script : $1"
 
 #shiv(){
 #   cat shakti.txt
