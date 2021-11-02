@@ -1,4 +1,4 @@
-#!/bin/sh
+/bin/sh
 
 #echo "My name is ${nodeNumber} "
 
