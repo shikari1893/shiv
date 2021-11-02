@@ -1,8 +1,9 @@
 #!/bin/bash
 
 
-echo "NM is $1"
+
 echo "The script name : $0"
+echo "The value of the first argument to the script : $1"
 
 shiv(){
    cat shakti.txt
