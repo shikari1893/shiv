@@ -18,7 +18,7 @@ node('shiv') {
                 println "NM is ${nodeNumber}"
                 env
                 sh '''
-                  
+                  echo "${nodeNumber}"
                   chmod +x scripts/test.sh
                   
                   scripts/test.sh ${nodeNumber}
