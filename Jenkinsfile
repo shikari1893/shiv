@@ -7,11 +7,16 @@ node('shiv') {
         def build_status = true
         def fyrelog=${fyrePath}/fyrerequest.log
         currentBuild.displayName = shiv
-        def nodeNumber= 1
+        def nodeNumber = 1
         
         stage('one') {
                checkout scm
-                sh ''' ./test.sh ${nodeNumber} '''
+                sh ''' 
+                
+                  chmod -R 755 test.sh
+                 ./test.sh ${nodeNumber} 
+                 
+                 '''
                //sh("./test.sh --var='${nodeNumber}'")
                 
         }
