@@ -11,10 +11,10 @@ node('shiv') {
         
         stage('one') {
                 checkout scm
-                sh ''
+                sh '''
                   chmod -R 755 scripts
                   scripts/test.sh
-                  ''
+                  '''
                  
                  
         }
