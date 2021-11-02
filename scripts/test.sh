@@ -9,6 +9,9 @@ echo "The value of the first argument to the script : $4"
 echo "The value of the first argument to the script : $5"
 
 nodeNumber=${5}
+resourceType=${4}
+
+echo "resource type is ${resourceType} "
 
 if [[ ${nodeNumber} = 1 ]]
 then
