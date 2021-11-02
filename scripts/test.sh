@@ -18,8 +18,14 @@
 
 nodeNumber=1
 
-cmd="pwd ${nodeNumber}"
-echo "$cmd"
+s="scripts/test.sh"
+v="${nodeNumber}"
+o=$s $v
+echo $o
+
+
+#cmd="pwd ${nodeNumber}"
+#echo "$cmd"
 
 
 
