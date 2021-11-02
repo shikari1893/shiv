@@ -18,9 +18,9 @@
 
 nodeNumber=1
 
-$s="test.sh "${nodeNumber} 
-
-echo $s
+$s="./test.sh "${nodeNumber} 
+eval $s
+#echo $s
 
 #v="${nodeNumber}"
 #o=$s $v
