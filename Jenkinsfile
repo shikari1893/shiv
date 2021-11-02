@@ -6,7 +6,7 @@ node('shiv') {
         def workspace = "pwd()"
         def build_status = true
         //def fyrelog=${fyrePath}/fyrerequest.log
-        currentBuild.displayName = shiv
+        //currentBuild.displayName = shiv
         def nodeNumber = 1
         
         stage('one') {
