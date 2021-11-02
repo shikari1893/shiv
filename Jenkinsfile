@@ -5,6 +5,12 @@
 
 
 node('shiv') {
+        
+        withCredentials([ 
+           usernamePassword(credentialsId: 'api-token',usernameVariable: 'FYRE_ID',passwordVariable: 'FYRE_TOKEN'),
+            usernamePassword(credentialsId: 'iautoma1-apitoken',usernameVariable: 'JENK_ID',passwordVariable: 'JENK_PASS'),
+            usernamePassword(credentialsId: fyrenodepass,usernameVariable: 'FYRENODE_USR',passwordVariable: 'FYRENODE_PW')
+    ]){
         def workspace = "pwd()"
         def build_status = true
         //def fyrelog=${fyrePath}/fyrerequest.log
@@ -16,9 +22,10 @@ node('shiv') {
         stage('one') {
                 checkout scm
                 env
+                echo "$FYRE_ID"
                 sh '''
   
-                  chmod +x scripts/shiv.sh
+                  chmod +x scripts/shiv.sh ${FYRE_ID} ${FYRE_TOKEN}
                   
                   scripts/shiv.sh
                 
@@ -56,3 +63,4 @@ node('shiv') {
     } */
         
       }
+}
