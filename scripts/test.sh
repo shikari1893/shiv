@@ -7,3 +7,11 @@ echo "The value of the first argument to the script : $2"
 echo "The value of the first argument to the script : $3"
 echo "The value of the first argument to the script : $4"
 echo "The value of the first argument to the script : $5"
+
+
+if [[ ${nodeNumber} = 1 ]]
+then
+  echo "yes"
+else
+  echo "NO"
+fi
