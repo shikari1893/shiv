@@ -48,12 +48,12 @@ echo "The value of the first argument to the script : $1"
 #echo "$* list of arguments"
 
 
-shiv(){
-   cat shakti.txt
+#shiv(){
+ #  cat shakti.txt
    
-   }
+  # }
    
 
 
 #setLocalVariables
-shiv
+#shiv
