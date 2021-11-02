@@ -11,17 +11,18 @@ node('shiv') {
         
         stage('one') {
                 checkout scm
+        
                 env
-                sh '''
+                sh """
                   chmod +x scripts/test.sh
             
-                  s="scripts/test.sh "$nodeNumber
+                  s="scripts/test.sh "${nodeNumber}
                   echo $s
              
                   eval $s
                   
                   
-                  '''
+                 """
                  
                  
         }
