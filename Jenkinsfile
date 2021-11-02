@@ -15,7 +15,7 @@ node('shiv') {
                 env
                 sh '''
                   chmod +x scripts/test.sh
-                  scripts/test.sh ${nodeNumber}
+                  scripts/test.sh ${FYRE_ID} ${FYRE_TOKEN} ${BUILD_DISPLAY_NAME} ${resourceType} ${nodeNumber}
                   '''
                  
                  
