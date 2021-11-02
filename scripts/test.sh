@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 shiv(){
    cat shakti.txt
