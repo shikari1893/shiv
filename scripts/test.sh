@@ -18,7 +18,7 @@
 
 nodeNumber=1
 
-$s="./test.sh "${nodeNumber} 
+$s="scripts/test.sh "${nodeNumber} 
 eval $s
 #echo $s
 
