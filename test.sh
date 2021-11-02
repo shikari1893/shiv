@@ -2,7 +2,7 @@
 
 #echo "My name is ${nodeNumber} "
 
-echo "Hi my name is shiv"
+pwd
 
 #echo "The value of the first argument to the script : $1"
 
