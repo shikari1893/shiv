@@ -17,7 +17,7 @@ node('shiv') {
                   s="scripts/test.sh 1"
                   echo $s
              
-                  #eval $s
+                  eval $s
                   
                   
                   '''
