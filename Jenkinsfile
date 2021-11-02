@@ -7,15 +7,15 @@
 node('shiv') {
         
         withCredentials([ 
-           usernamePassword(credentialsId: 'api-token',usernameVariable: 'FYRE_ID',passwordVariable: 'FYRE_TOKEN'),
-            usernamePassword(credentialsId: 'iautoma1-apitoken',usernameVariable: 'JENK_ID',passwordVariable: 'JENK_PASS'),
-            usernamePassword(credentialsId: fyrenodepass,usernameVariable: 'FYRENODE_USR',passwordVariable: 'FYRENODE_PW')
+           usernamePassword(credentialsId: 'api-token',usernameVariable: 'FYRE_ID',passwordVariable: 'FYRE_TOKEN')
+          
     ]){
         def workspace = "pwd()"
         def build_status = true
         //def fyrelog=${fyrePath}/fyrerequest.log
         //currentBuild.displayName = shiv
         def nodeNumber = 1
+        def fyrenodepass = '53c754d7-9683-4da2-8a8f-fd41b108cf78'
         //nodeNumber = null
         
         
