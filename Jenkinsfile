@@ -5,21 +5,22 @@
 node('shiv') {
         def workspace = "pwd()"
         def build_status = true
-        def fyrelog=${fyrePath}/fyrerequest.log
+        //def fyrelog=${fyrePath}/fyrerequest.log
         currentBuild.displayName = shiv
         def nodeNumber = 1
         
         stage('one') {
-               checkout scm
+                checkout scm
                 sh ''' 
                   nodeNumber= 1
                   chmod -R 755 test.sh
                  ./test.sh ${nodeNumber} 
                  
                  '''
+        }
                //sh("./test.sh --var='${nodeNumber}'")
                 
-        }
+        
              
                 //sh ' ./test.sh -f ${fyrelog} '
                         
