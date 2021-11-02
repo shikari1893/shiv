@@ -7,11 +7,12 @@ node('shiv') {
         def build_status = true
         //def fyrelog=${fyrePath}/fyrerequest.log
         //currentBuild.displayName = shiv
-        int nodeNumber = 1
+        def nodeNumber = 1
+        
         
         stage('one') {
                 checkout scm
-     
+                println "NM is ${nodeNumber}"
                 env
                 sh '''
                   
