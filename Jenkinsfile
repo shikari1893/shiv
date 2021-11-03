@@ -33,7 +33,7 @@ node('shiv') {
       
                 stage('two'){
                         sh '''
-                           scripts/shivdocker.sh ${JENK_PASS} ${JENK_ID}
+                           scripts/shivdocker.sh ${FYRE_ID} ${FYRE_TOKEN}
                            echo "second step"
                         
                         '''
