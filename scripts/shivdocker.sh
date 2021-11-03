@@ -6,7 +6,7 @@
               wkcNode="$lwkcBuildName-b${BUILD_NUMBER}-host-1.fyre.ibm.com"
               jenkinsHost="https://dataconn-jenkins.swg-devops.com"
               echo "Working on ${wkcNode}"
-              scripts/docker.sh root@${wkcNode} ${FYRE_ID} ${FYRE_TOKEN}
+              scripts/docker.sh root@${wkcNode}
               scripts/docker.sh ${FYRE_ID} ${FYRE_TOKEN} ${jenkinsHost} ${wkcNodeLabel}
               #sshpass -p ${FYRENODE_PW} ssh -o StrictHostKeyChecking=no root@${wkcNode} "chmod 755 /tmp/runSwarm.sh; /tmp/runSwarm.sh ${JENK_PASS} ${jenkinsHost} ${wkcNodeLabel} ${JENK_ID}"
 
