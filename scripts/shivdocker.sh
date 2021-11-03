@@ -9,7 +9,7 @@
               scripts/docker.sh root@${wkcNode}
               scripts/docker.sh ${FYRE_ID} ${FYRE_TOKEN} ${jenkinsHost} ${wkcNodeLabel}
               echo delfyreStat=$?
-              if [ "$delfyreStat" -eq 0 ];then
+              if [[ "$delfyreStat" -eq 0 ]];then
               echo "successfully removed"
               else
               echo "failure"
