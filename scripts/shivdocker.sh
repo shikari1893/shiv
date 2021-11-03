@@ -8,6 +8,15 @@
               echo "Working on ${wkcNode}"
               scripts/docker.sh root@${wkcNode}
               scripts/docker.sh ${FYRE_ID} ${FYRE_TOKEN} ${jenkinsHost} ${wkcNodeLabel}
+              echo delfyreStat=$?
+              if [ ${delfyreStat} eq 0 ];then
+              echo "success"
+              else
+              echo "failure"
+              fi
+              if [[ ${delfyreStat} = 1 ]] ; then exit 1 ; fi
+              
+              
               #sshpass -p ${FYRENODE_PW} ssh -o StrictHostKeyChecking=no root@${wkcNode} "chmod 755 /tmp/runSwarm.sh; /tmp/runSwarm.sh ${JENK_PASS} ${jenkinsHost} ${wkcNodeLabel} ${JENK_ID}"
 
               #sshpass -p ${FYRENODE_PW} scp -o StrictHostKeyChecking=no
