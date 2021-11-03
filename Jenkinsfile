@@ -35,7 +35,7 @@ node('shiv') {
                         sh '''
                             sshpass -p ${FYRE_TOKEN} scp -o StrictHostKeyChecking=no scripts/shivdocker.sh root@${wkcNode}:/tmp
                         
-                        ''''
+                        '''
                 
                 }
                    
