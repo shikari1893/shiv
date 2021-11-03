@@ -2,7 +2,7 @@
 
 	      
               fyrelog=${fyrePath}/fyrerequest.log
-	      currentBuild.displayName = "${fyreClust}"
+	      
               nodeNumber=1
               resourceType=VM
               chmod -R 755 scripts
