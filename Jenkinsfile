@@ -26,9 +26,11 @@ node('shiv') {
                 checkout scm
                 currentBuild.displayName = "${fyreClust}"
                 
-                sh "chmod +x scripts/test.sh"
+                sh " chmod +x scripts/test.sh "
             
                 sh " scripts/test.sh ${FYRE_ID} ${FYRE_TOKEN} ${BUILD_DISPLAY_NAME} ${resourceType} ${nodeNumber} "
+                
+        }
                 //sh ''' scripts/test.sh ${FYRE_ID} ${FYRE_TOKEN} ${BUILD_DISPLAY_NAME} +resourceType+ ${nodeNumber} '''
                 
                 
@@ -36,7 +38,7 @@ node('shiv') {
                 
                
                 
-        }
+        
       
          /*       
                 stage('two'){
