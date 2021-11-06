@@ -18,6 +18,7 @@ node('shiv') {
         def fyrenodepass = '53c754d7-9683-4da2-8a8f-fd41b108cf78'
         def fyreClust = 'shiv'
         def resourceType = 'VM'
+        def fyrelog=${fyrePath}/fyrerequest.log
         //nodeNumber = null
         
         
