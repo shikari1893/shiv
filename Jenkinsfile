@@ -26,7 +26,7 @@ node('shiv') {
                 checkout scm
                 currentBuild.displayName = "${fyreClust}"
                 
-                sh " chmod +x scripts/test.sh "
+                //sh " chmod +x scripts/test.sh "
             
                 sh ''' 
                     chmod +x scripts/test.sh
