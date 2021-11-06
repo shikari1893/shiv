@@ -19,8 +19,10 @@ echo "The value of the first argument to the script : $5"
 
 nodeNumber=${5}
 resourceType=${4}
+wkcNode=${1}
 
 echo "resource type is ${resourceType} "
+echo "wkcNode is ${wkcNode}"
 
 if [[ ${nodeNumber} = 1 ]]
 then
