@@ -4,6 +4,9 @@
 setLocalVariables()
 {
  pwd
+ echo "resource type is ${resourceType} "
+ echo "node number is ${nodeNumber} "
+ 
 }
 
 
