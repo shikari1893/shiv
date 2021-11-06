@@ -35,7 +35,7 @@ node('shiv') {
                 
                 sh " chmod -R 755 scripts" 
                 
-                sh " scripts/test.sh root@${wkcNode} && scripts/test.sh root@${lwkcBuildName} && scripts/test.sh ${lwkcBuildTag} "
+                sh " scripts/test.sh root@${wkcNode} && scripts/test.sh root@${lwkcBuildName} && chmod -R 755 scripts; scripts/test.sh ${lwkcBuildTag} "
                 //sh " chmod -R 755 scripts && scripts/test.sh ${FYRE_ID} ${FYRE_TOKEN} ${BUILD_DISPLAY_NAME} ${resourceType} ${nodeNumber} "
             
                 //sh """
