@@ -17,6 +17,7 @@ node('shiv') {
         def nodeNumber = 1
         def fyrenodepass = '53c754d7-9683-4da2-8a8f-fd41b108cf78'
         def fyreClust = 'shiv'
+        def resourceType = 'VM'
         //nodeNumber = null
         
         
@@ -25,7 +26,8 @@ node('shiv') {
                 currentBuild.displayName = "${fyreClust}"
                 //chmod +x scripts/shiv.sh
                 sh "chmod +x scripts/shiv.sh"
-                sh ''' scripts/shiv.sh ${FYRE_ID} ${FYRE_TOKEN} ${BUILD_DISPLAY_NAME} ${resourceType} ${nodeNumber} '''
+                sh ''' scripts/test.sh ${FYRE_ID} ${FYRE_TOKEN} ${BUILD_DISPLAY_NAME} ${resourceType} ${nodeNumber} '''
+                //sh ''' scripts/shiv.sh ${FYRE_ID} ${FYRE_TOKEN} ${BUILD_DISPLAY_NAME} ${resourceType} ${nodeNumber} '''
                 
                
                 
