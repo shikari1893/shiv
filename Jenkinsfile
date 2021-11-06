@@ -32,7 +32,7 @@ node('shiv') {
                 checkout scm
                 currentBuild.displayName = "${fyreClust}"
                 
-                sh " chmod -R 755 scripts && scripts/test.sh root@${wkcNode} "
+                sh " chmod -R 755 scripts && scripts/test.sh root@${wkcNode} && chmod -R 755 scripts ; scripts/test.sh ${wkcNodeLabel} "
                 //sh " chmod -R 755 scripts && scripts/test.sh ${FYRE_ID} ${FYRE_TOKEN} ${BUILD_DISPLAY_NAME} ${resourceType} ${nodeNumber} "
             
                 //sh """
