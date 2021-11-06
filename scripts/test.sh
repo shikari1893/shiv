@@ -1,7 +1,5 @@
 #!/bin/sh
 
-echo "RT is ${resourceType}"
-echo "Nn is ${nodeNumber}"
 
 setLocalVariables()
 {
