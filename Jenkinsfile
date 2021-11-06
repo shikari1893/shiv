@@ -27,7 +27,7 @@ node('shiv') {
                 currentBuild.displayName = "${fyreClust}"
                 //chmod +x scripts/shiv.sh
                 //sh "chmod +x scripts/test.sh"
-                sh ' chmod +x scripts/test.sh  && scripts/test.sh ${FYRE_ID} ${FYRE_TOKEN} ${BUILD_DISPLAY_NAME} ${resourceType} ${nodeNumber} '
+                sh ' chmod +x scripts/test.sh; [ $? -eq 0 ] && scripts/test.sh ${FYRE_ID} ${FYRE_TOKEN} ${BUILD_DISPLAY_NAME} ${resourceType} ${nodeNumber} '
                 //sh ''' scripts/test.sh ${FYRE_ID} ${FYRE_TOKEN} ${BUILD_DISPLAY_NAME} +resourceType+ ${nodeNumber} '''
                 
                 
