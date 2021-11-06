@@ -22,7 +22,7 @@ node('shiv') {
         def wkcNodeLabel="$lwkcBuildTag-b${BUILD_NUMBER}-host-1"
         def lwkcBuildName="wkc"
         def wkcNode="$lwkcBuildName-b${BUILD_NUMBER}-host-1.fyre.ibm.com"
-        def st= "$?"
+        def st= '$?'
                 
           
         //def fyrelog=${fyrePath}/fyrerequest.log
@@ -33,7 +33,7 @@ node('shiv') {
                 checkout scm
                 currentBuild.displayName = "${fyreClust}"
                 
-                sh " chmod -R 755 scripts && scripts/test.sh root@${wkcNode} && chmod -R 755 scripts ; scripts/test.sh ${wkcNodeLabel} && if [[ ${st} = 1 ]] ; then exit 1 ; fi && scripts/test.sh ${wkcNodeLabel} "
+                sh " chmod -R 755 scripts && scripts/test.sh root@${wkcNode} && chmod -R 755 scripts ; scripts/test.sh ${wkcNodeLabel} && if [[ "${st}" = 1 ]] ; then exit 1 ; fi && scripts/test.sh ${wkcNodeLabel} "
                 //sh " chmod -R 755 scripts && scripts/test.sh ${FYRE_ID} ${FYRE_TOKEN} ${BUILD_DISPLAY_NAME} ${resourceType} ${nodeNumber} "
             
                 //sh """
