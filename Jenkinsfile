@@ -28,7 +28,10 @@ node('shiv') {
                 
                 sh " chmod +x scripts/test.sh "
             
-                sh " scripts/test.sh ${FYRE_ID} ${FYRE_TOKEN} ${BUILD_DISPLAY_NAME} ${resourceType} ${nodeNumber} "
+                sh ''' 
+                    chmod +x scripts/test.sh
+                    scripts/test.sh ${FYRE_ID} ${FYRE_TOKEN} ${BUILD_DISPLAY_NAME} +resourceType+ ${nodeNumber} "
+                '''
                 
         }
                 //sh ''' scripts/test.sh ${FYRE_ID} ${FYRE_TOKEN} ${BUILD_DISPLAY_NAME} +resourceType+ ${nodeNumber} '''
